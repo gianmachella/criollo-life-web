@@ -1,0 +1,121 @@
+.card-container {
+  border: 1px solid #878787;
+  border-radius: 15px;
+  width: 300px;
+  height: 445px;
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 10px 5px 25px rgb(161, 161, 161);
+  view-timeline-name: --product;
+  view-timeline-axis: block;
+
+  animation-timeline: --product;
+  animation-name: show;
+
+  animation-range: entry 25% cover 50%;
+  animation-fill-mode: both;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    scale: 25%;
+  }
+  to {
+    opacity: 1;
+    scale: 100%;
+  }
+}
+
+.card-container:hover {
+  transition: 0.1s;
+  box-shadow: 10px 5px 25px rgb(43, 43, 43);
+}
+
+.text-product {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+  background-color: rgb(220, 220, 220);
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.image-product img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px 15px 0 0;
+}
+
+.product-title {
+  font-size: 0.8;
+  margin: 0;
+}
+
+.product-description {
+  font-size: 0.8;
+  margin: 0;
+}
+
+.price {
+  font-size: 1;
+  margin: 0;
+}
+
+.footer-card {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.buy-button {
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.8;
+  cursor: pointer;
+}
+
+.buy-button:hover {
+  background-color: rgb(62, 62, 62);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.8;
+  cursor: pointer;
+  box-shadow: 5px 5px 25px rgb(43, 43, 43);
+}
+
+.body-card-product {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.img-modal-product {
+  width: 250px;
+}
+
+.price-modal {
+  font-size: 2rem;
+}
+
+.msg-modal {
+  font-size: 0.7rem;
+  color: rgb(110, 109, 109);
+  margin-left: 10px;
+}
+
+.amazon {
+  width: 50px;
+}

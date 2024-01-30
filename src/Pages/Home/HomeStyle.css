@@ -1,0 +1,98 @@
+.home-container {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(224, 224, 224);
+}
+
+.cover-container {
+  height: 100vh;
+  width: 100%;
+  background: url("../../images/sky.png");
+  background-size: cover;
+}
+
+.cover {
+  background: url("../../images/cover.png");
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  z-index: 1000;
+  position: absolute;
+}
+
+.text-int {
+  width: 100%;
+  height: 100vh;
+  background-color: #424242;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo {
+  width: 300px;
+  top: 60%;
+  left: 50%;
+  opacity: 0;
+  transform: scale(1, 1.1) translate(-50%, 10%);
+  position: fixed;
+  z-index: 0;
+}
+
+#front {
+  background-image: url("../../images/cover.png");
+  background-size: cover;
+  top: 20%;
+}
+
+#textblock {
+  z-index: 2000;
+  height: 100vh;
+  background: url("../../images/about.jpg");
+  background-size: cover;
+}
+
+#textblock-container {
+  width: 100%;
+  padding: 5% 20% 10% 10%;
+  font-family: "Indie Flower", cursive;
+}
+
+@media only screen and (max-width: 600px) {
+  #textblock-container {
+    width: 100%;
+    padding: 15% 10% 50% 10%;
+  }
+  #textblock {
+    background-color: rgb(224, 224, 224);
+  }
+  #front {
+    background-image: url("../../images/cover.png");
+    background-size: cover;
+    top: 25%;
+    height: 710px;
+    animation: movimiento 20s infinite linear alternate;
+  }
+  .cover-section {
+    height: 550px !important;
+  }
+
+  .about {
+    height: 1000px;
+  }
+}
+
+@keyframes movimiento {
+  0% {
+    background-position: 0px 0px;
+  }
+  100% {
+    background-position: 100% 0px;
+  }
+}
+
+#textblock-title {
+  color: #424242;
+  font-size: 4rem;
+  font-weight: 600;
+}
